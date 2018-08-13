@@ -45,10 +45,13 @@ function total() {
   return runningTotal;
 }
 
-function removeFromCart(item) {
-  for(var i = 0; )
-  if(item === itemName) {cart.splice(item); return cart;}
-  else if(item != itemName) {return 'That item is not in your cart.';}
+function removeFromCart(itemName) {
+  for(var i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === itemName) {
+      return cart.splice(item);
+    }
+  }
+  return 'That item is not in your cart.';
 }
 
 function placeOrder(cardNumber) {
