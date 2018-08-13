@@ -17,26 +17,16 @@ return `${itemName} has been added to your cart.`;
 }
 
 function viewCart() {
-  var cartEverything = 'In your cart, you  have ';
-  var cartItems = [];
-  var cartPrices = [];
-  if (cart.length === 0) {return 'Your shopping cart is empty.'; }
-  else {
-    let i = 0;
-    while (cart.length > i) {
-      cartItems.push
-      (Object.keys(cart[i]));
-      cartPrices.push(' at $' + cart[i] [Object.keys(cart[i])]);
-      cartEverything += ( ' ' + cartItems[i] + cartPrices[i]);
-      
-      if((2 < cart.length) && ((i) != (cart.length - 1))) {cartEverything += ',';
-      
-      if((1 < cart.length) && ((i + 1) === (cart.length - 1))) {cartEverything += (' and');}
-      }
-      else if ((1 < cart.length) && ((i + 1) === (cart.length - 1))) {cartEverything += (' and');}
-      console.log(i++);
-    }
+  if (cart.length === 0) {
+    return 'Your shopping cart is empty.';
   }
+  
+  var 
+  for (var i = 0; i < cart.length; i++) {
+    
+  }
+}
+  
 return cartEverything + '.';
 }
 
