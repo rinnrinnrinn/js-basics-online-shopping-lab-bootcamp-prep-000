@@ -21,13 +21,12 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   
-  var 
+  var cartEverything = "In your cart, you have";
   for (var i = 0; i < cart.length; i++) {
-    
+    var item = cart[i];
+    cartEverything += ` ${item.itemName} at $${item.itemPrice}`;
   }
-}
-  
-return cartEverything + '.';
+  return cartEverything + '.';
 }
 
 function total() {
