@@ -33,7 +33,8 @@ function viewCart() {
       } else {
         cartEverything += ", and";
       }
-      
+    }
+    
   }
   return cartEverything + '.';
 }
