@@ -27,13 +27,11 @@ function viewCart() {
     var item = cart[i];
     cartEverything += ` ${item.itemName} at $${item.itemPrice}`;
     
-    if (cart.length > 1) {
       if (i < cart.length - 2) {
         cartEverything += ",";
       } else if (i === cart.length - 2) {
         cartEverything += ", and";
       }
-    }
     
   }
   return cartEverything + '.';
