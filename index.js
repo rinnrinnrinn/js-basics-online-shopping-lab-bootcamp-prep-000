@@ -55,5 +55,5 @@ function removeFromCart(itemName) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber === 0) {return ""
 }
