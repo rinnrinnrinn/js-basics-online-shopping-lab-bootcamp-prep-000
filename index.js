@@ -37,7 +37,7 @@ function viewCart() {
       console.log(i++);
     }
   }
-console.log(cartEverything + '.');
+return "cartEverything + '.'";
   
 }
 
