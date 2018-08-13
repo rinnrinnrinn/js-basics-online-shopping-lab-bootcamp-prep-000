@@ -47,7 +47,7 @@ function total() {
 
 function removeFromCart(item) {
   if(item === cart) {cart.slice(item);} return cart;
-  
+  else(return '')
 }
 
 function placeOrder(cardNumber) {
