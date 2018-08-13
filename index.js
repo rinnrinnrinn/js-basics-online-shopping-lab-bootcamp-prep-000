@@ -25,6 +25,10 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++) {
     var item = cart[i];
     cartEverything += ` ${item.itemName} at $${item.itemPrice}`;
+    if (cart.length > 1) {
+      if (i < cart.length - 1) {
+        cartEverything += ",";
+      }
   }
   return cartEverything + '.';
 }
