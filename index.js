@@ -28,6 +28,8 @@ function viewCart() {
     if (cart.length > 1) {
       if (i < cart.length - 1) {
         cartEverything += ",";
+      } else {
+        cartEverything += ", and";
       }
   }
   return cartEverything + '.';
