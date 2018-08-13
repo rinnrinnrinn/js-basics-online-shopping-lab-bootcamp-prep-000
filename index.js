@@ -20,7 +20,7 @@ function viewCart() {
   var cartEverything = 'In your cart, you  have';
   var cartItems = [];
   var cartPrices = [];
-  if (cart.length === 0) {console.log('Your shopping cart is empty.'); }
+  if (cart.length === 0) {return 'Your shopping cart is empty.'; }
   else {
     let i = 0;
     while (cart.length > i) {
